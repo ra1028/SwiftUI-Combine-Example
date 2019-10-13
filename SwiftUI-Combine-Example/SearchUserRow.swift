@@ -8,8 +8,8 @@ struct SearchUserRow: View {
         HStack {
             viewModel.userImages[user].map { image in
                 Image(uiImage: image)
+                    .resizable()
                     .frame(width: 44, height: 44)
-                    .aspectRatio(contentMode: .fit)
                     .clipShape(Circle())
                     .overlay(Circle().stroke(Color.black, lineWidth: 1))
             }

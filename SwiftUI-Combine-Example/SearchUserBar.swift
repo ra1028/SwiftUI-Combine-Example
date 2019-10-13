@@ -13,6 +13,7 @@ struct SearchUserBar: View {
                     .frame(height: 32)
                     .background(Color.white.opacity(0.4))
                     .cornerRadius(8)
+                    .autocapitalization(.none)
 
                 Button(
                     action: action,
